@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #2e2e2e;
+    background-color: #000000;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -46,22 +46,22 @@ body {
 }
 
 #slider-img-1 {
-    background-image: url('img/nature_image.jpg');
+    background-image: url('img/car1.png');
     background-position: center;
 }
 
 #slider-img-2 {
-    background-image: url('img/nature_image.jpg');
+    background-image: url('img/car2.png');
     background-position: center;
 }
 
 #slider-img-3 {
-    background-image: url('img/nature_image.jpg');
+    background-image: url('img/car3.png');
     background-position: center;
 }
 
 #slider-img-4 {
-    background-image: url('img/nature_image.jpg');
+    background-image: url('img/car4.png');
     background-position: center;
 }
 
