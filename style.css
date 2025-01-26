@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #011923;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -19,7 +19,7 @@ body {
 .container .wrapper {
     width: 60vw;
     height: 75vh;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.167);
     margin: 5rem auto;
     overflow: hidden;
     border-radius: 10px;
