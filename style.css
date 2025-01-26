@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2e2e2e;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.container .wrapper {
+    width: 60vw;
+    height: 75vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .wrapper-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.container .wrapper-holder div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(20%) blur(0.5px);
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.container .wrapper-holder div:hover {
+    filter: grayscale(0%) blur(0);
+    transform: scale(1.05);
+}
+
+#slider-img-1 {
+    background-image: url('img/nature_image.jpg');
+    background-position: center;
+}
+
+#slider-img-2 {
+    background-image: url('img/nature_image.jpg');
+    background-position: center;
+}
+
+#slider-img-3 {
+    background-image: url('img/nature_image.jpg');
+    background-position: center;
+}
+
+#slider-img-4 {
+    background-image: url('img/nature_image.jpg');
+    background-position: center;
+}
+
+.container .button-holder {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+.container .button-holder .button {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.3rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.container .button-holder .button:hover {
+    box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.6);
+}
+
+.container .button-holder .button.active {
+    background-color: cyan;
+}
+
+@media screen and (max-width: 480px) {
+    .container .wrapper {
+        height: 40vh;
+    }
+
+    .container .button-holder .button {
+        width: 10px;
+        height: 10px;
+    }
+}
